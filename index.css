@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('images/index_background.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-size: 6rem;
+  font-style: ans-serif;
+    color: lawngreen;
+  background: linear-gradient(to bottom, #0bf90b,#f3f324, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+  text-shadow: 35px 35px 30px #ecd9c6;
+  margin: 20px;
+  text-align: left;
+}
+
+p {
+  position: fixed;
+  bottom: 20%;
+  left: 0;
+  font-size: 3rem;
+  background: linear-gradient(to right, #92a817, #57ee1b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ffffff;
+  text-shadow: 35px 35px 30px #ffffff;
+  margin-bottom: 1rem;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+li {
+  font-size: 1.97rem;
+  font-style: italic;
+  color: #000000;
+  display: inline-flex;
+  text-shadow: 30px 30px 15px #000000;
+  background-image: linear-gradient(to bottom right, #0c6e0c,#cfcf24, #000000);
+  margin-bottom: 0.5rem;
+}
