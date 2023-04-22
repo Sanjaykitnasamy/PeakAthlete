@@ -1,0 +1,169 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+}
+
+.sitemapTree {
+	display: grid;
+	grid-template-columns: 9.5% 9% 9% 9% 9% 9% 9% 9% 9% 9.5%;
+	grid-template-rows: auto;
+	margin: 100px 0 0 0; 
+	text-align: center;
+	font-weight: bold;
+	z-index: 1;
+}
+
+a{text-decoration:none}
+
+img {
+	width: 100%;
+}
+
+/* styling for home svg */
+.home {
+	display: grid;
+	grid-column: 6/7;
+	grid-row: 1/2;
+	padding: 0 5px 0 5px;
+	font-size: 30px;
+}
+
+.main-line {
+	display: grid;
+	grid-column: 2/11;
+	grid-row: 2/3;
+	position: relative;
+	height: 200px;
+	padding: 0 50px 0 100px;
+}
+
+/* styling for sports svg */
+.sports {
+	display: grid;
+	grid-column: 3/4;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+}
+
+.sub-line1, .sub-line2 {
+	display: grid;
+	width: 40%;
+	height: 300px;
+	background-image: url(svg/sublines.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: left;
+}
+
+.sub-line1 {
+	grid-column: 3/4;
+	grid-row: 4/5;
+}
+
+.sub-line2 {
+	grid-column: 7/8;
+	grid-row: 4/5;
+}
+
+p.subtopic {
+	margin-top: 24px; 
+	padding-left: 30px;
+    font-size: 23px;
+}
+
+/* styling for shop svg */
+.shop {
+	display: grid;
+	grid-column: 4/5;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+}
+
+/* styling for comments svg */
+.comments {
+	display: grid;
+	grid-column: 5/6;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 26px;
+}
+
+/* styling for quiz svg */
+.quiz {
+	display: grid;
+	grid-column: 6/7;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+}
+
+/* styling for student details and page editors svg */
+.student {
+	display: grid;
+	grid-column: 7/8;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+}
+
+/* styling for sitemap svg */
+.sitemap {
+	display: grid;
+	grid-column: 8/9;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+}
+
+/* styling for gallery svg */
+.gallery {
+	display: grid;
+	grid-column: 9/10;
+	grid-row: 3/4;
+	position: relative;
+	padding: 0 10px 0 10px;
+	font-size: 30px;
+}
+
+.sitemapTree a:link {
+	text-decoration: none;
+}
+
+.sitemapTree a:link {
+	color: #fff;
+}
+
+.sub-line1 a:link, .sub-line2 a:link {
+	color: #fff;
+}
+
+.sitemapTree a:visited, .sitemapTree a:focus {
+	color: #fff;
+}
+
+/* change link color when mouse over */
+.sitemapTree a:hover {
+	color: #31bd60;
+}
+
+#creator{
+    color: white;
+    margin-left: 50px;
+	margin-top: 50px;
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

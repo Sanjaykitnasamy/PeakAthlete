@@ -1,0 +1,251 @@
+body {
+    background-color: #f2f2f2 !important;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .product-section{
+    display: flex;
+  }
+  .Product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 300px; /* set a fixed height for the container */
+    align-items: stretch; /* make all containers the same height */
+  }
+  .shoppingCart{
+    grid-column: 3/4;
+    grid-row: 3/13;
+}
+td,
+th { /*has the selected products in table format*/
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+table { /*table format*/
+    border-collapse: collapse;
+    background-color: white;
+    font-size: 18px;
+    margin:3%;
+}
+
+
+.ImgProduct{
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  flex-direction:column;
+ 
+  border: none;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 23px 35px 27px 30px;
+  border: 1px solid #D9D9D9;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 300px;
+  margin-top: 20px;
+
+  
+}
+
+.ImgProduct img {
+  max-width: 100%;
+  height: 150px; /* set a fixed height for the image */
+  object-fit: cover; /* ensure the image fills the container while maintaining aspect ratio */
+}
+
+
+/* Style for the product description */
+.Description {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Style for the product name */
+.NameOf_Item {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 0%;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.Price{
+  text-align: center
+
+}
+
+/* Style for the product price */
+.Price {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: -10px; /* add margin-top to move it down */
+}
+
+/* Style for the quantity buttons */
+.quantityButtons {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle; /* Align the buttons to the middle of the container */
+}
+
+/* Style for the decrease button */
+.quantityDecrease {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Style for the show quantity */
+.showQuantity {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px;
+}
+
+/* Style for the increase button */
+.quantityIncrease {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #dcdcdc;
+  border: none;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Style for the add to cart button */
+.addToCartButton {
+  background-color: #00b300;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.shoppingCart{
+  grid-column: 5/4;
+  grid-row: 5/13;
+}
+
+/* Style for the product overlay */
+.Description_Overlay {
+  position: relative;
+  height: 50%;
+  width: 50%;
+}
+
+/* Style for the product overlay content */
+.Description_Overlay p {
+  position: absolute;
+  bottom: 100px;
+  width: 50%;
+  padding: 5px;
+  margin: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color:white
+}  
+/* Style for payment form */
+.PaymentForm {
+width: 50%;
+margin: 0 auto;
+font-size: 16px;
+font-family: Arial, sans-serif;
+}
+
+.PaymentForm fieldset {
+border: none;
+padding: 0;
+margin: 0;
+}
+
+.PaymentForm legend {
+font-weight: bold;
+font-size: 1.2em;
+margin-bottom: 10px;
+}
+
+.PaymentForm label {
+display: inline-block;
+width: 150px;
+text-align: right;
+margin-right: 10px;
+}
+
+.PaymentForm input[type="text"],
+.PaymentForm input[type="month"] {
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 10px;
+}
+
+.PaymentForm select {
+width: 100%;
+height: 38px;
+padding: 6px 12px;
+font-size: 14px;
+line-height: 1.428571429;
+color: #555;
+background-color: #fff;
+background-image: none;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin-bottom: 10px;
+}
+
+.PaymentForm .paymentButton {
+display: inline-block;
+background-color: #007bff;
+color: #fff;
+border: none;
+padding: 0.375rem 0.75rem;
+margin-top: 0.5rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: 0.25rem;
+cursor: pointer;
+transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.PaymentForm .paymentButton:hover {
+background-color: #0069d9;
+}
+
+.PaymentForm .paymentButton:focus {
+outline: none;
+box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
