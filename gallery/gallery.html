@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Peak Athlete : Gallery</title>
+		<link rel="stylesheet" href="../external.css">
+		<link rel="stylesheet" href="gallery.css" >
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+	</head>	
+	<body>
+		<header>        
+			<div id="navigation">
+				<p>PEAK<br>ATHLETE</p>
+				<div id="colour"></div>
+					<nav>
+					<a href="../home.html">Home</a>
+					<a href="../comments/comment.html">Comments</a>
+					<a href="../shop/shop.html">Shop</a>
+					<a href="../quiz/Quiz_Start.html">Quiz</a>
+					<a href="../sitemap/sitemap.html">SiteMap</a>
+					<a id="current" href="gallery.html">Gallery</a>
+					<a href="../student-details/student_details.html">About</a>
+					</nav>
+			</div>
+			<div id="content">
+				<div id="first">
+					<p><span style="color: lawngreen;" id="illusion">GALLERY</span></p>
+					<a href="#gallery"><div id=button>View</div></a>
+				</div>
+			</div>
+		</header>
+		<!-- menu for the colour scheme and font size -->
+		<div class="font-menu">
+			<ul>
+				<li>
+				  <a href="#0">Colour Scheme</a>
+				  <ul>
+					<li><a href="#0" onclick="changeColourScheme('#dceff3', '#ffffff', '#262626', '#b3b3b3')">White</a></li>
+					<li><a href="#0" onclick="changeColourScheme('#f0e35c', '#c3b513', '#BA1001', '#FF6407')">Yellow</a></li>
+					<li><a href="#0" onclick="changeColourScheme('#ccccff', '#b3b3ff', '#380036', '#0CBABA')">Lilac</a></li>
+					<li><a href="#0" onclick="changeRandomColour()">Random</a></li>
+				  </ul>
+				</li>
+				<li>
+				  <a href="#0">Font Size</a>
+				  <ul>
+					<li><a href="#0" onclick="changeFontSize('21px', '14px')">Small</a></li>
+					<li><a href="#0" onclick="changeFontSize('23px', '16px')">Medium</a></li>
+					<li><a href="#0" onclick="changeFontSize('24px', '17px')">Large</a></li>
+				  </ul>
+				</li>
+				<li><a href="#0" onclick="reset()">Reset</a></li>
+			  </ul>
+		</div>
+		<div class="gallery" id="gallery">
+			<h1 class="mainHeading">Sport Events in UK </h1>
+			<h2 class="subHeading">Past sporting events hosted in the UK</h2>
+			<!-- div containing the gallery of the past events -->
+			<div class="gallery1">
+				<!-- main gallery container one -->
+				<div class="galleryContainer">
+					<div class="image">
+						<img src="images/2022Commonwealth.png" class="imageContent" alt="main image - past events">
+					</div>
+					<div class="text">
+						<h3 class="textHeader">2022 Commonwealth Games</h3>
+						<p class="textContent">The 2022 Commonwealth Games, authoritatively known as the XXII Commonwealth Games and usually known as Birmingham 2022, was
+							a worldwide multi-sport occurred in Birmingham, Britain between 28 July and 8 August 2022.
+							The Games was the largest ever held, With 72 participating nations and over 1.3 million ticket sales.
+							It was also the first event to combine the paralympic competition with more events for women than men and to have more events for women than men.
+							Several trade shows and cultural festivals were held throughout the West Midlands in conjunction with the Games.
+							There was also anesports competition.
+							It was the last time the Games were held under Queen Elizabeth II before her death on September 8, exactly one month after the Games ended.
+						</p>
+							
+							
+					</div>
+				</div>
+				
+				<div class="tool-tip tooltip-triangle"></div>
+				<div class="mainSlider">
+					<div class="innerSlider">
+						<img src="images/2022Commonwealth.png" id="Commonwealth" 
+						onclick="resizeImage('Commonwealth', 'Commonwealth-1', 'Commonwealth-2');" 
+						onmouseover="imageBorder('Commonwealth');" onmouseout="removeBorder('Commonwealth');" alt="2022 Commonwealth">
+						
+						<p id="Commonwealth-1">2022 Commonwealth Game</p>
+						<p id="Commonwealth-2">The 2022 Commonwealth Games, authoritatively known as the XXII Commonwealth Games and usually known as Birmingham 2022, was
+							a worldwide multi-sport occurred in Birmingham, Britain between 28 July and 8 August 2022.
+							The Games was the largest ever held, With 72 participating nations and over 1.3 million ticket sales.
+							It was also the first event to combine the paralympic competition with more events for women than men and to have more events for women than men.
+							Several trade shows and cultural festivals were held throughout the West Midlands in conjunction with the Games.
+							There was also an esports competition.
+							It was the last time the Games were held under Queen Elizabeth II before her death on September 8, exactly one month after the Games ended.
+							</p>
+						
+						<img src="images/2019CricketWorldCup.png" id="CricketWorldCup" 
+						onclick="resizeImage('CricketWorldCup', 'CricketWorldCup-1', 'CricketWorldCup-2');" 
+						onmouseover="imageBorder('CricketWorldCup');" onmouseout="removeBorder('CricketWorldCup');" alt="2019 Cricket World Cup">
+						
+						<p id="CricketWorldCup-1">2019 Cricket World Cup</p>
+						<p id="CricketWorldCup-2">The 2019 ICC Cricket World Cup was the 12th Cricket World Cup, a quadrennial One Day International (ODI) cricket tournament
+							contested by men's national teams and organized by the International Cricket Council (ICC). It was hosted between 30 May and 14 July across 10
+							venues in England and a single venue in Wales with the tournament being the fifth time that England had hosted the World Cup while for Wales it
+							was their third.
+							England and New Zealand won their respective semi-finals to qualify for the final, which was played at Lord's in London. 
+							The final ended in a tie after the match ended with both teams scoring 241 runs, followed by the first Super Over in an ODI; England 
+							won the title, their first, on the boundary countback rule after the Super Over also finished level.                         
+							</p>
+						
+			
+						<img src="images/2012Olympics.png" id="olympics" 
+						onclick="resizeImage('olympics', 'olympics-1', 'olympics-2');" 
+						onmouseover="imageBorder('olympics');" onmouseout="removeBorder('olympics');" alt="2012 london olympics">
+						
+						<p id="olympics-1">2012 London Olympics</p>
+						<p id="olympics-2">London 2012 Olympic Games, athletic festival held in London that took place July 27–August 12,
+							2012. The London Games were the 27th occurrence of the modern Olympic Games. In 2012 London became the first
+							city to host the modern Games three times, having previously been the site of the 1908 and 1948 Olympic
+							Games.
+							</p>
+						
+			
+						<img src="images/2015RugbyWorldCup.png" id="RugbyWorldCup" 
+						onclick="resizeImage('RugbyWorldCup', 'RugbyWorldCup-1', 'RugbyWorldCup-2');" 
+						onmouseover="imageBorder('RugbyWorldCup');" onmouseout="removeBorder('RugbyWorldCup');" alt="2015 Rugby World Cup">
+						
+						<p id="RugbyWorldCup-1">2015 Rugby World Cup </p>
+						<p id="RugbyWorldCup-2">The quadrennial rugby union world championship, the Rugby World Cup, was held in 2015.
+							It was the eighth Rugby World Cup. The competition was facilitated by Britain from 18 September to 31 October.
+							The World Cup had no new teams for the first time ever.New Zealand were the first team to retain their title and the first to win for a third time.
+						</p>
+						
+						
+						<img src="images/2017WorldAthleticChampionships.png" id="AthleticChampionships" 
+						onclick="resizeImage('AthleticChampionships', 'AthleticChampionships-1', 'AthleticChampionships-2');" 
+						onmouseover="imageBorder('AthleticChampionships');" onmouseout="removeBorder('AthleticChampionships');" alt="2017 World Athletic Championships">
+						
+						<p id="AthleticChampionships-1">2017 World Athletic Championships</p>
+						<p id="AthleticChampionships-2">The sixteenth IAAF World Championships were held at London Stadium in London, United Kingdom, from 
+							August 4 to 13 for the 2017 event. London was authoritatively granted the titles on 11 November 2011.
+					</p>
+						
+						
+						<img src="images/1966FIFAWorldCup.png" id="FIFAWorldCup" 
+						onclick="resizeImage('FIFAWorldCup', 'FIFAWorldCup-1', 'FIFAWorldCup-2');" 
+						onmouseover="imageBorder('FIFAWorldCup');" onmouseout="removeBorder('FIFAWorldCup');" alt="1966 FIFA World Cup ">
+						
+						<p id="FIFAWorldCup-1">1966 FIFA World Cup </p>
+						<p id="FIFAWorldCup-2">The eighth FIFA World Cup, a quadrennial football competition for senior men's national teams, took place in 1966.
+							From July 11 to July 30, 1966, it was played in England. England won its first and only World Cup title by defeating
+							West Germany 4–2 in the final. The first FIFA World Cup to be held in an English-speaking region was in 1966.
+							The final was held at Wembley Stadium, which had a capacity of 98,600 and was one of eight stadiums across England.
+							With 70 nations participating, the 1966 event had the most teams of any international tournament to date. For the first time, certain matches
+							of the World Cup were broadcast via satellite to nations on other continents. The final was the last to be shown entirely in black and white,
+							and the BBC broadcast it locally.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<h2 class="subHeading">Upcoming sporting events hosted in the UK</h2>
+			<!-- div containing the gallery of the upcoming events -->
+			<div class="gallery2">
+				<!-- main gallery container two -->
+				<div class="galleryContainer">
+					<div class="image">
+						<img src="images/2023WheelchairRugby.png" class="imageContent" alt="main image - upcoming events">
+					</div>
+					<div class="text">
+						<h3 class="textHeader">2023 Wheelchair Rugby European Championship</h3>
+						<p class="textContent">Cardiff, Wales will host the 2023 Wheelchair Rugby European Championship from
+							3rd to 7th May, which promises to be an action-packed and thrilling weekend of rugby unlike any other.
+								Eight European teams will compete in the championship, including Paralympic gold medalist Great Britain
+								competing on home turf. Not only is the European trophy up for grabs, but direct entry into the
+								Paralympic Games in Paris in 2024 is also up for grabs for the winners.
+						</p>
+							
+					</div>
+				</div>
+				
+				<div class="tool-tip tooltip-triangle"></div>
+				<div class="mainSlider">
+					<div class="innerSlider">
+						<img src="images/2023WheelchairRugby.png" id="wheelchairRugby" 
+						onclick="resizeImage1('wheelchairRugby', 'wheelchairRugby-1', 'wheelchairRugby-2');" 
+						onmouseover="imageBorder('wheelchairRugby');" onmouseout="removeBorder('wheelchairRugby');" alt="wheelchairRugby">
+						
+						<p id="wheelchairRugby-1">2023 Wheelchair Rugby European Championship</p>
+						<p id="wheelchairRugby-2">Cardiff, Wales will host the 2023 Wheelchair Rugby European Championship from
+								3rd to 7th May, which promises to be an action-packed and thrilling weekend of rugby unlike any other.
+								Eight European teams will compete in the championship, including Paralympic gold medalist Great Britain
+								competing on home turf. Not only is the European trophy up for grabs, but direct entry into the
+								Paralympic Games in Paris in 2024 is also up for grabs for the winners.
+							</p>
+
+						<img src="images/2023ParaSwim.png" id="paraswim" 
+						onclick="resizeImage1('paraswim', 'paraswim-1', 'paraswim-2');" 
+						onmouseover="imageBorder('paraswim');" onmouseout="removeBorder('paraswim');" alt="para swimmer">
+						
+						<p id="paraswim-1">2023 World Para Swimming Championships</p>
+						<p id="paraswim-2">Manchester will host the 11th Para Swimming World Championships from July 31 to August 6,
+								2023. The Manchester Aquatics Centre is where the competition will take place. After Glasgow 2015 and
+								London 2019, the World Championships will be held in Great Britain for the third time in Manchester
+								in 2023.
+							</p>
+						
+						<img src="images/2023ICF.jpg" id="ICF" 
+						onclick="resizeImage1('ICF', 'ICF-1', 'ICF-2');" 
+						onmouseover="imageBorder('ICF');" onmouseout="removeBorder('ICF');" alt="Canoe Slalom">
+						
+						<p id="ICF-1">2023 ICT Canoe Slalom World Championships</p>
+						<p id="ICF-2">The World Championship competition will once more take place at the Lee Valley White Water
+								Centre in England from September 19th  –24th , 2023. This will be the venue's first major international
+								competition since the 2019 ICF World Cup, in which Great Britain won an amazing seven titles, including
+								four golds.</p>
+						
+						<img src="images/2023FIG.png" id="FIG" 
+						onclick="resizeImage1('FIG', 'FIG-1', 'FIG-2');" 
+						onmouseover="imageBorder('FIG');" onmouseout="removeBorder('FIG');" alt="gymnastics">
+						
+						<p id="FIG-1">2023 FIG Trampoline world Championships</p>
+						<p id="FIG-2">The 37th FIG Trampoline Gymnastics World Championships will be held in Birmingham, England
+						from November 9th –19th, 2023, at the Utilita Arena, and will feature athletes from all over the world.</p>
+						
+						<img src="images/2030T20.png" id="T20" 
+						onclick="resizeImage1('T20', 'T20-1', 'T20-2');" 
+						onmouseover="imageBorder('T20');" onmouseout="removeBorder('T20');" alt="cricket">
+						
+						<p id="T20-1">2030 T20 Cricket World Cup</p>
+						<p id="T20-2">The 2030 ICC Men's T20 World Cup will be co-hosted by England, Scotland, and Ireland.
+						The International Cricket Council (ICC) made the announcement as it announced the hosts of each men's white-ball
+						tournament from 2024 to 2031.The 2030 event's schedule and host venues still need to be finalized.</p>
+						
+						<img src="images/2024UEFA.jpg" id="UEFA" 
+						onclick="resizeImage1('UEFA', 'UEFA-1', 'UEFA-2');" 
+						onmouseover="imageBorder('UEFA');" onmouseout="removeBorder('UEFA');" alt="Wembley Stadium">
+						
+						<p id="UEFA-1">2024 UEFA Champions League Final</p>
+						<p id="UEFA-2">The final match of the 2023–24 UEFA Champions League will be the 2024 UEFA Champions League final. 
+						This will be the 69th season of UEFA's premier club football tournament and the 32nd season since it was
+						renamed the UEFA Champions League from the European Champion Clubs' Cup. 
+						It will take place on June 1, 2024, at Wembley Stadium in London, England. As a result of the 2020
+							final's postponement and relocation, London will host the 2024 final instead. 
+						The winners will be eligible to compete in the 2024 UEFA Super Cup against the winners of the
+						2023–24 UEFA Europa League.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="creator">
+			<a href="../page-editor/roshini/roshini.html"><h1>Page created By: Roshini Thevarajan</h1></a>
+		</div>
+		<footer>
+				<a id="logo" href="#navigation">
+					PEAK<br>ATHLETE
+				</a>
+			<div id="hl"></div>
+			<!-- footer -->
+			<div id="footerlinks">
+				<a href="../comments/comment.html">Comments</a>
+				<a href="../shop/shop.html">Shop</a>
+				<a href="../quiz/quiz_start.html">Quiz</a>
+				<a href="../sitemap/sitemap.html">SiteMap</a>
+				<a href="../gallery/gallery.html">Gallery</a>
+				<a href="../student-details/student_details.html">About us</a>
+			</div>
+			<div id="homelinks">
+				<h3>HOME</h3>
+				<a href="../cricket/cricket.html">Cricket</a>
+				<a href="../football/football.html">Football</a>
+				<a href="../basketball/basketball.html">Basketball</a>
+				<a href="../boxing/boxing.html">Boxing</a>
+				<a href="../home.html#legends">Legends</a>
+			</div>
+			<div id="cricketlinks">
+				<h3>CRICKET</h3>
+				<a href="../cricket/cricket.html#cricket">Introduction</a>
+				<a href="../cricket/cricket.html#odicontent">ODI</a>
+				<a href="../cricket/cricket.html#t20content">T20</a>
+				<a href="../cricket/cricket.html#testcontent">TEST</a>
+			</div>
+			<div id="footballlinks">
+				<h3>FOOTBALL</h3>
+				<a href="../football/football.html#football">Introduction</a>
+				<a href="../football/football.html#fifacontent">FIFA</a>
+				<a href="../football/football.html#uefacontent">UEFA</a>
+				<a href="../football/football.html#uclcontent">Copa America</a>
+			</div>
+			<div id="basketballlinks">
+				<h3>BASKETBALL</h3>
+				<a href="../basketball/basketball.html#basketball">Introduction</a>
+				<a href="../basketball/basketball.html#natcontent">National</a>
+				<a href="../basketball/basketball.html#leaguecontent">League</a>
+			</div>
+			<div id="boxinglinks">
+				<h3>BOXING</h3>
+				<a href="../boxing/boxing.html#boxing">Introduction</a>
+				<a href="../boxing/boxing.html#natcontent">National</a>
+				<a href="../boxing/boxing.html#spocontent">Sponsored</a>
+			</div>
+			<div id="social">
+				<h3>SOCIAL</h3>
+				<a href="https://instagram.com">Instagram</a>
+				<a href="https://facebook.com">Facebook</a>
+				<a href="https://twitter.com">Twitter</a>
+			</div>
+			<p id="end">© 2023 BIS Group B1, All Rights Reserved</p>
+		</footer>
+		<script>
+			// functions to change the font size
+			function changeFontSize(headerFont, contentFont) {
+				document.getElementsByClassName("textHeader")[0].style.fontSize = headerFont;
+				document.getElementsByClassName("textContent")[0].style.fontSize = contentFont;
+				document.getElementsByClassName("textHeader")[1].style.fontSize = headerFont;
+				document.getElementsByClassName("textContent")[1].style.fontSize = contentFont;
+			}
+
+			// function to change the gallery div background colour and font colour
+			function changeColourScheme(header, content, primary, secondary) {
+				document.getElementsByClassName("textHeader")[0].style.color = header;
+				document.getElementsByClassName("textContent")[0].style.color = content;
+				document.getElementsByClassName("textHeader")[1].style.color = header;
+				document.getElementsByClassName("textContent")[1].style.color = content;				
+
+				document.getElementsByClassName("galleryContainer")[0].style.backgroundImage = "linear-gradient(to bottom right, " + secondary + ", " + primary + ")";
+				document.getElementsByClassName("galleryContainer")[0].style.backgroundColor = "none";
+				document.getElementsByClassName("galleryContainer")[1].style.backgroundImage = "linear-gradient(to bottom right, " + secondary + ", " + primary + ")";
+				document.getElementsByClassName("galleryContainer")[1].style.backgroundColor = "none";
+				document.getElementsByClassName("mainSlider")[0].style.backgroundColor = primary;
+				document.getElementsByClassName("mainSlider")[1].style.backgroundColor = primary;
+				document.getElementsByClassName("tool-tip")[0].style.borderColor = 'transparent transparent transparent ' + primary;
+				document.getElementsByClassName("tool-tip")[1].style.borderColor = 'transparent transparent transparent ' + primary;
+			}
+
+			// function to change the colour scheme to a random colour
+			function changeRandomColour() {
+				// the random colour is generated using the Math function
+				var textColour = '#' + Math.floor(Math.random() * 16777215).toString(16);
+				var containerColour = '#' + Math.floor(Math.random() * 16777215).toString(16);
+
+				document.getElementsByClassName("textHeader")[0].style.color = textColour;
+				document.getElementsByClassName("textContent")[0].style.color = textColour;
+				document.getElementsByClassName("textHeader")[1].style.color = textColour;
+				document.getElementsByClassName("textContent")[1].style.color = textColour;
+				document.getElementsByClassName("galleryContainer")[0].style.backgroundImage = "none";
+				document.getElementsByClassName("galleryContainer")[0].style.backgroundColor = containerColour;
+				document.getElementsByClassName("galleryContainer")[1].style.backgroundImage = "none";
+				document.getElementsByClassName("galleryContainer")[1].style.backgroundColor = containerColour;
+				document.getElementsByClassName("mainSlider")[0].style.backgroundColor = containerColour;
+				document.getElementsByClassName("mainSlider")[1].style.backgroundColor = containerColour;
+				document.getElementsByClassName("tool-tip")[0].style.borderColor = "transparent transparent transparent " + containerColour;
+				document.getElementsByClassName("tool-tip")[1].style.borderColor = "transparent transparent transparent " + containerColour;
+			}
+
+			// function to reset the colour scheme and font size to its default values
+			function reset() {
+				document.getElementsByClassName("textHeader")[0].style.color = "#000000";
+				document.getElementsByClassName("textContent")[0].style.color = "#000000";
+				document.getElementsByClassName("textHeader")[1].style.color = "#000000";
+				document.getElementsByClassName("textContent")[1].style.color = "#000000";
+
+				document.getElementsByClassName("textHeader")[0].style.fontSize = "23px";
+				document.getElementsByClassName("textContent")[0].style.fontSize = "16px";
+				document.getElementsByClassName("textHeader")[1].style.fontSize = "23px";
+				document.getElementsByClassName("textContent")[1].style.fontSize = "16px";
+
+				document.getElementsByClassName("galleryContainer")[0].style.backgroundImage = "linear-gradient(to bottom right, #01C32C, #18452E)";
+				document.getElementsByClassName("galleryContainer")[0].style.backgroundColor = "none";
+				document.getElementsByClassName("galleryContainer")[1].style.backgroundImage = "linear-gradient(to bottom right, #01C32C, #18452E)";
+				document.getElementsByClassName("galleryContainer")[1].style.backgroundColor = "none";
+				document.getElementsByClassName("mainSlider")[0].style.backgroundColor = "#18452E";
+				document.getElementsByClassName("mainSlider")[1].style.backgroundColor = "#18452E";
+				document.getElementsByClassName("tool-tip")[0].style.borderColor = "transparent transparent transparent #18452E";
+				document.getElementsByClassName("tool-tip")[1].style.borderColor = "transparent transparent transparent #18452E";
+			}
+			
+			// function to set the image and text from the selected thumbnail to the main container
+			function resizeImage(image, header, content) {
+				document.getElementsByClassName('imageContent')[0].src = document.getElementById(image).src;
+				document.getElementsByClassName('textHeader')[0].innerHTML = document.getElementById(header).innerHTML;
+				document.getElementsByClassName('textContent')[0].innerHTML = document.getElementById(content).innerHTML;
+				if (image == 'Commonwealth') {
+					document.getElementsByClassName('tooltip-triangle')[0].style.marginTop = '52px';
+				} else if (image == 'CricketWorldCup') {
+					document.getElementsByClassName('tooltip-triangle')[0].style.marginTop = '145px';
+				} else if (image == 'olympics') {
+					document.getElementsByClassName('tooltip-triangle')[0].style.marginTop = '235px';
+				} else if (image == 'RugbyWorldCup') {
+					document.getElementsByClassName('tooltip-triangle')[0].style.marginTop = '325px';
+				} else if (image == 'AthleticChampionships') {
+					document.getElementsByClassName('tooltip-triangle')[0].style.marginTop = '420px';
+				} else if (image == 'FIFAWorldCup') {
+					document.getElementsByClassName('tooltip-triangle')[0].style.marginTop = '510px';
+				}
+			}
+
+			function resizeImage1(image, header, content) {
+				document.getElementsByClassName('imageContent')[1].src = document.getElementById(image).src;
+				document.getElementsByClassName('textHeader')[1].innerHTML = document.getElementById(header).innerHTML;
+				document.getElementsByClassName('textContent')[1].innerHTML = document.getElementById(content).innerHTML;
+				if (image == 'wheelchairRugby') {
+					document.getElementsByClassName('tooltip-triangle')[1].style.marginTop = '52px';
+				} else if (image == 'paraswim') {
+					document.getElementsByClassName('tooltip-triangle')[1].style.marginTop = '145px';
+				} else if (image == 'ICF') {
+					document.getElementsByClassName('tooltip-triangle')[1].style.marginTop = '235px';
+				} else if (image == 'FIG') {
+					document.getElementsByClassName('tooltip-triangle')[1].style.marginTop = '325px';
+				} else if (image == 'T20') {
+					document.getElementsByClassName('tooltip-triangle')[1].style.marginTop = '420px';
+				} else if (image == 'UEFA') {
+					document.getElementsByClassName('tooltip-triangle')[1].style.marginTop = '510px';
+				}
+			}
+			
+			function imageBorder(image) {
+				document.getElementById(image).style.outline = '2px solid #000';
+				document.getElementById(image).style.outlineOffset = '-6px';
+			}
+			
+			function removeBorder(image) {
+				document.getElementById(image).style.outline = 'none';
+			}
+		</script>		
+	</body>
+</html>

@@ -1,0 +1,1010 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*settin the parameters of the header and adding a background image*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/manunited.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+/*navigation bar*/
+#navigation{
+    width: 100%;
+    height: 110px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+#navigation p{
+    margin-left: 40px;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 35px;
+    transition: 0.2s;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+#navigation #colour{
+    height: 4px;
+    width:800px;
+    background-color: lawngreen;
+    margin: 0px 5px;
+}
+
+
+#navigation nav{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    background-color: black;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/*navigation bar links*/
+#navigation nav a{
+    padding: 10px;
+    display: table-cell;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: Impact;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+
+/*navigation bar hover effect on links*/
+#navigation nav a:hover{
+    transition-duration: 1s;
+    border-radius: 8px;
+    background-image: linear-gradient(to right,lime,lawngreen,lime);
+    color: black;
+}
+
+/*current page on the navigation bar*/
+#navigation nav #current{
+    border-radius: 8px;
+    background-image: linear-gradient(to right,lime,lawngreen,lime);
+    color: black;
+}
+
+/*div showing the words displayed on the opening page if used by the group member*/
+#content{
+    display: flex;
+    text-align: center;
+}
+
+#first{
+    flex-basis: 100%;
+    margin: auto;
+    display: inline;
+    align-items: center;
+}
+
+#first p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+
+/*to italicize the last word of the phrase*/
+#first #illusion{
+    font-style: italic;
+    color: lawngreen;
+    text-shadow: 3px 3px 3px crimson;
+}
+
+/*div acting as a button to either explore the current page or return to home page*/
+#first #button{
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    padding: 12px;
+    background-image: linear-gradient(to right,lawngreen,yellow,lawngreen);
+    border-radius: 20px;
+    border: 0;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    margin: -50px auto auto auto;
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+/*link of the div*/
+#first a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#first #button:hover{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+/*div parameters of the introduction pae*/
+#firstpage{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.introduction{
+    height: 100vh;
+    width: 100%;
+    display: flexbox;
+}
+
+.introduction h1{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Audiowide", "Impact";
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 3px crimson;
+    margin: 30px 0 10px 0;
+}
+
+.introduction .line{
+    height: 30px;
+    width: 90%;
+    background-color: lawngreen;
+    margin: auto;
+    border: 0;
+    padding: 0;
+    border-radius: 30px;
+}
+
+
+/*div for paragraph content*/
+.introduction  p{
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 15px 150px 0;
+    text-align: justify;
+    background-image: linear-gradient(75deg, #BB8FCE, #F0B27A, turquoise, #58D68D);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 5px;     
+}
+
+@media only screen and (max-width: 1367px){
+
+    .introduction p{
+        font-size: 29px;
+        margin: 15px 100px 0;
+    }
+
+}
+
+
+.introduction a{
+    text-decoration: none;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -380px 0 0 0;
+    padding: 0;
+
+}
+/*setting style of divs that act as links to the specific content*/
+.link{
+    height: 150px;
+    width: 250px;
+    display: inline-block;
+    background-color: #212121;
+    border-radius: 20px;
+    border: solid;
+    margin: 100px 35px ;
+    box-shadow: 0 48px 96px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@media only screen and (max-width: 1367px){
+    .link{
+        margin: 150px 35px;
+        padding: 0;
+        display: inline-block;
+        height: 130px;
+        width: 200px;
+    }
+}
+
+.link:hover{
+    transform: translateY(-10px)
+}
+
+.link1{
+    border-color: #BB8FCE;
+}
+
+.link1 h3{
+    color: #BB8FCE;
+}
+
+.link1:hover{
+ box-shadow: 0px 0px 2px 2px #BB8FCE;   
+}
+
+
+.link2{
+    border-color: #F0B27A;
+}
+
+.link2 h3{
+    color: #F0B27A;
+}
+
+.link2:hover{
+ box-shadow: 0px 0px 2px 2px #F0B27A;   
+}
+
+
+.link3{
+    border-color: turquoise;
+}
+
+.link3 h3{
+    color: turquoise;
+}
+
+
+.link3:hover{
+ box-shadow: 0px 0px 2px 2px turquoise;   
+}
+
+
+.link4{
+    border-color:  #58D68D;
+}
+
+
+.link4 h3{
+    color: #58D68D;
+}
+
+
+.link4:hover{
+ box-shadow: 0px 0px 2px 2px  #58D68D;   
+}
+
+.link h3{
+    padding: 10px;
+    font-family: "Audiowide", "sans-serif";
+}
+
+.link p{
+    padding: 10px;
+    margin-top: -20px;
+    color: white;
+    text-shadow: 3px 3px 3px #ababab;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*div parameters of second page*/
+#secondpage{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*div style for the cricket page with linear gradient background colour blending with body background*/
+#cricket{
+    height: 600px;
+    width: 1200px;
+    background-image: linear-gradient(to right, rgb(163, 92, 231),rgb(163, 92, 231), magenta,magenta, rgb(163, 92, 231),rgb(163, 92, 231), black);
+    margin: 0 0 0 150px;
+    position: absolute;
+    margin-top: 75px;
+    border: 5px;
+}
+
+@media only screen and (max-width: 1367px){
+    #cricket{
+        width: 800px;
+    }
+}
+
+/*div style for image of cricketer*/
+#cricketer{
+    height: 600px;
+    width: 600px;   
+    background-image: url('images/benstokes.jpg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    transition: 0.5s;
+}
+
+/*hover effect on cricketer to align perfectly outside the content*/
+#cricketer:hover{
+    margin-left: -100px;
+    margin-top: -100px;
+    height: 700px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    #cricketer:hover{
+        height: 650px;
+        margin-top: -50px;
+        margin-left: -110px;
+    }
+}
+
+/*div style for the paragraph content*/
+#cricket p{
+    height: 310px;
+    width: 800px;
+    background-color: #212121;
+    border-color: #BB8FCE;
+    border-style: solid;
+    margin-left: 500px;
+    margin-right: 0;
+    margin-top: 65px;
+    margin-bottom: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 80px 20px;
+    text-align: justify;
+    z-index: 2;
+    position: absolute;
+}
+
+/*div hover effect to move to the right*/
+#cricket p:hover{
+    transform: translateX(-25px);
+}
+
+@media only screen and (max-width: 1367px){
+    #cricket p{
+        width: 600px;
+        height: 310px;
+        padding: 45px 20px;
+        font-size: 14px;
+        margin-top: 100px;
+        margin-left: 490px;
+    }
+}
+
+/*div parametes of third page*/
+#thirdpage{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*div style for the football page with linear gradient background colour blending with body background*/
+#football{
+    height: 600px;
+    width: 1200px;
+    background-image: linear-gradient(to right,black, darkorange, gold, darkorange);
+    margin: 0 0 0 150px;
+    position: absolute;
+    margin-top: 75px;
+    border: 5px;
+}
+
+@media only screen and (max-width: 1367px){
+    #football{
+        width: 800px;
+        background-image: linear-gradient(to right,black, darkorange,darkorange,darkorange, gold,gold,gold, darkorange,darkorange,darkorange);
+    }
+}
+
+/*div style for image of footballer*/
+#footballer{
+    height: 600px;
+    width: 600px;   
+    background-image: url('images/harry.jpg');
+    background-position: center;
+    margin-left: 600px;
+    background-size: cover;
+    position: absolute;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1367px){
+    #footballer{
+        margin-left: 400px;
+    }
+}
+
+/*hover effect on footballer to align perfectly outside the content*/
+#footballer:hover{
+    margin-left: 718px;
+    margin-top: -100px;
+    height: 700px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    #footballer:hover{
+        height: 650px;
+        margin-top: -50px;
+        margin-left: 555px;
+    }
+}
+
+/*div style for the paragraph content*/
+#football p{
+    height: 310px;
+    width: 800px;
+    background-color: #212121;
+    border-color: #F0B27A;
+    border-style: solid;
+    margin-left: -125px;
+    margin-right: 0;
+    margin-top: 65px;
+    margin-bottom: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 80px 20px;
+    text-align: justify;
+    z-index: 2;
+    position: absolute;
+}
+
+/*div hover effect to move to the right*/
+#football p:hover{
+    transform: translateX(25px);
+}
+
+@media only screen and (max-width: 1367px){
+    #football p{
+        width: 600px;
+        height: 310px;
+        padding: 45px 20px;
+        font-size: 14px;
+        margin-top: 100px;
+        margin-left: -90px;
+    }
+}
+
+/*div parametes of fourth page*/
+#fourthpage{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*div style for the basketball page with linear gradient background colour blending with body background*/
+#basketball{
+    height: 600px;
+    width: 1200px;
+    background-image: linear-gradient(to right, steelblue, cyan, steelblue, black);
+    margin: 0 0 0 150px;
+    position: absolute;
+    margin-top: 75px;
+    border: 5px;
+}
+
+@media only screen and (max-width: 1367px){
+    #basketball{
+        width: 800px;
+        background-image: linear-gradient(to right, steelblue, steelblue, steelblue, cyan, cyan, cyan, steelblue,steelblue,steelblue, black);
+    }
+}
+
+/*div style for image of basketballer*/
+#basketballer{
+    height: 600px;
+    width: 600px;   
+    background-image: url('images/booker.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    transition: 0.5s;
+}
+
+/*hover effect on basketballer to align perfectly outside the content*/
+#basketballer:hover{
+    margin-left: -100px;
+    margin-top: -100px;
+    height: 700px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    #basketballer:hover{
+        height: 650px;
+        margin-top: -50px;
+        margin-left: -110px;
+    }
+}
+
+/*div style for the paragraph content*/
+#basketball p{
+    height: 310px;
+    width: 800px;
+    background-color: #212121;
+    border-color: turquoise;
+    border-style: solid;
+    margin-left: 500px;
+    margin-right: 0;
+    margin-top: 65px;
+    margin-bottom: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 80px 20px;
+    text-align: justify;
+    z-index: 2;
+    position: absolute;
+}
+
+/*div hover effect to move to the right*/
+#basketball p:hover{
+    transform: translateX(-25px);
+}
+
+@media only screen and (max-width: 1367px){
+    #basketball p{
+        width: 600px;
+        height: 310px;
+        padding: 45px 20px;
+        font-size: 14px;
+        margin-top: 100px;
+        margin-left: 490px;
+    }
+}
+
+/*div parametes of third page*/
+#fifthpage{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/*div style for the football page with linear gradient background colour blending with body background*/
+#boxing{
+    height: 600px;
+    width: 1200px;
+    background-image: linear-gradient(to right,black, lawngreen, yellow, lawngreen);
+    margin: 0 0 0 150px;
+    position: absolute;
+    margin-top: 75px;
+    border: 5px;
+}
+
+@media only screen and (max-width: 1367px){
+    #boxing{
+        width: 800px;
+        background-image: linear-gradient(to right,black,  lawngreen,lawngreen,lawngreen, yellow,yellow,yellow, lawngreen,lawngreen,lawngreen);
+    }
+}
+
+/*div style for image of footballer*/
+#boxer{
+    height: 600px;
+    width: 600px;   
+    background-image: url('images/canelo.jpg');
+    background-position: center;
+    margin-left: 600px;
+    background-size: cover;
+    position: absolute;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 1367px){
+    #boxer{
+        margin-left: 400px;
+    }
+}
+
+/*hover effect on footballer to align perfectly outside the content*/
+#boxer:hover{
+    margin-left: 718px;
+    margin-top: -100px;
+    height: 700px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    #boxer:hover{
+        height: 650px;
+        margin-top: -50px;
+        margin-left: 555px;
+    }
+}
+
+/*div style for the paragraph content*/
+#boxing p{
+    height: 310px;
+    width: 800px;
+    background-color: #212121;
+    border-color: #58D68D;
+    border-style: solid;
+    margin-left: -125px;
+    margin-right: 0;
+    margin-top: 65px;
+    margin-bottom: 0;
+    transition: .5s;
+    border-radius: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 80px 20px;
+    text-align: justify;
+    z-index: 2;
+    position: absolute;
+}
+
+/*div hover effect to move to the right*/
+#boxing p:hover{
+    transform: translateX(25px);
+}
+
+@media only screen and (max-width: 1367px){
+    #boxing p{
+        width: 600px;
+        height: 310px;
+        padding: 45px 20px;
+        font-size: 14px;
+        margin-top: 100px;
+        margin-left: -90px;
+    }
+}
+
+
+
+
+/*anchor style*/
+.explore{
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 2;
+    margin-top: 10px;
+    margin-left: -5px;
+}
+
+@media only screen and (max-width:1367px){
+    .explore{
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: -5px;
+        margin-left: 500px;
+    }
+}
+
+.explore1{
+    background-image: linear-gradient(to bottom right, rgb(163, 92, 231), magenta, rgb(163, 92, 231));
+}
+
+.explore2{
+    background-image: linear-gradient(to bottom right, darkorange, gold, darkorange);
+}
+
+.explore3{
+    background-image: linear-gradient(to bottom right, steelblue, cyan, steelblue);
+}
+
+.explore4{
+    background-image: linear-gradient(to bottom right, lawngreen, yellow, lawngreen);
+}
+
+/*div parameters for last page*/
+#lastpage{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to top, #000, #17202A, #2C3E50, #424949, #2C3E50, #17202A, #000);
+    background-repeat: no-repeat;
+
+}
+
+/*style for h1 element*/
+#legends{
+    color: gold;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Audiowide','sans-serif';
+    text-shadow: 3px 3px 3px red;
+    height: 5px;
+}
+
+/*div style for display*/
+#items{
+    display: flex;
+    flex-direction: row;
+}
+
+/*setting div style for all 4 cards*/
+.card{
+    height: 645px;
+    width: 800px;
+    background-color: black;
+    margin: 50px 15px ;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 48px 96px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card a{
+    text-decoration: none;
+}
+
+/*setting a translatY effect, text shadow and box shadow on hover*/
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 4px 4px darkred;
+    transition-duration: .2s;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.5);
+  }
+
+/*style for heading of the card when we hover on card*/
+.card:hover .cardheading{
+    color: black;
+    transition-duration: 1s;
+    background-image: linear-gradient(to bottom right, gold, crimson, gold);
+    border-radius: 15px;
+}
+
+/*style for all images*/
+.card img{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.cardcontent {
+    padding: 20px;
+    text-align: center;
+}
+
+/*style for h1 of all athletes*/
+.cardheading {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px red;
+    color: gold;
+    padding: 5px;
+    transition: 0.2s;
+}
+
+/*style of all the quotes*/
+.text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+#creator{
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+@media only screen and (max-width:1367px){
+    #creator{
+        margin-top: 150px;
+    }
+}
+
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+    
+
+footer #logo{
+    margin-left: 45px;
+    margin-top: 75px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    text-decoration: none;
+    color:white;
+    font-size: 50px;
+}
+
+#hl{
+    height: 1px;
+    width: 100%;
+    background-color: lawngreen;
+    margin: 310px 0 0 0;
+    border: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#footerlinks{
+    margin-left: 250px;
+    margin-top: 50px;
+    position: absolute;
+
+}
+#footerlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#homelinks{
+    margin-left: 400px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#homelinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#homelinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#cricketlinks{
+    margin-left: 550px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#cricketlinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cricketlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footballlinks{
+    margin-left: 700px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#footballlinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footballlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#basketballlinks{
+    margin-left: 850px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#basketballlinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#basketballlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#boxinglinks{
+    margin-left: 1000px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#boxinglinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#boxinglinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#social{
+    margin-left: 1150px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#social h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#social a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#end{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 350px;
+    margin-left: 25px;
+    position: absolute;
+}

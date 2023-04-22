@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/*settin the parameters of the header and adding a background image*/
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/manunited.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+/*navigation bar*/
+#navigation{
+    width: 100%;
+    height: 110px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+#navigation p{
+    margin-left: 40px;
+    margin-right: 0;
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-size: 35px;
+    transition: 0.2s;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+#navigation #colour{
+    height: 4px;
+    width:800px;
+    background-color: lawngreen;
+    margin: 0px 5px;
+}
+
+
+#navigation nav{
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    background-color: black;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/*navigation bar links*/
+#navigation nav a{
+    padding: 10px;
+    display: table-cell;
+    text-transform: uppercase;
+    text-shadow: 0 2px 5px rgba(0,0,0,.5);
+    transition: 0.5s;
+    text-decoration: none;
+    font-family: Impact;
+    color: white;
+    margin: 0 0 0 0;
+}
+
+
+/*navigation bar hover effect on links*/
+#navigation nav a:hover{
+    transition-duration: 1s;
+    border-radius: 8px;
+    background-image: linear-gradient(to right,lime,lawngreen,lime);
+    color: black;
+}
+
+/*current page on the navigation bar*/
+#navigation nav #current{
+    border-radius: 8px;
+    background-image: linear-gradient(to right,lime,lawngreen,lime);
+    color: black;
+}
+
+/*div showing the words displayed on the opening page if used by the group member*/
+#content{
+    display: flex;
+    text-align: center;
+}
+
+#first{
+    flex-basis: 100%;
+    margin: auto;
+    display: inline;
+    align-items: center;
+}
+
+#first p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+
+/*to italicize the last word of the phrase*/
+#first #illusion{
+    font-style: italic;
+    color: lawngreen;
+    text-shadow: 3px 3px 3px crimson;
+}
+
+/*div acting as a button to either explore the current page or return to home page*/
+#first #button{
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    padding: 12px;
+    background-image: linear-gradient(to right,lawngreen,yellow,lawngreen);
+    border-radius: 20px;
+    border: 0;
+    text-shadow: 0 4px 5px rgba(0,0,0,0.5);
+    cursor: pointer;
+    margin: -50px auto auto auto;
+    transition: transform 0.5s;
+    text-align: center;
+}
+
+/*link of the div*/
+#first a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#first #button:hover{
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+footer{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 10px 0 0 0;
+}
+
+
+footer #logo{
+    margin-left: 45px;
+    margin-top: 75px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    text-decoration: none;
+    color:white;
+    font-size: 50px;
+}
+
+#hl{
+    height: 1px;
+    width: 100%;
+    background-color: lawngreen;
+    margin: 310px 0 0 0;
+    border: 0;
+    padding: 0;
+    position: absolute;
+}
+
+#footerlinks{
+    margin-left: 250px;
+    margin-top: 50px;
+    position: absolute;
+
+}
+#footerlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#homelinks{
+    margin-left: 400px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#homelinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#homelinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#cricketlinks{
+    margin-left: 550px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#cricketlinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#cricketlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#footballlinks{
+    margin-left: 700px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#footballlinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#footballlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#basketballlinks{
+    margin-left: 850px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#basketballlinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#basketballlinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#boxinglinks{
+    margin-left: 1000px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#boxinglinks h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#boxinglinks a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#social{
+    margin-left: 1150px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+#social h3{
+    margin-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#social a{
+    display: block;
+    margin: 20px 15px;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#end{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 350px;
+    margin-left: 25px;
+    position: absolute;
+}

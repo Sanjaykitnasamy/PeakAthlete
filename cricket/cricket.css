@@ -1,0 +1,394 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/crick.jpg');
+}
+
+#cricket{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+#cricketid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#cricketcontent{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-color: black;
+    text-align: justify;
+    color: white;
+}
+
+@media only screen and (max-width:1367px){
+    #cricketcontent{
+        width: 50%;
+    }
+}
+
+#cricketcontent h1{
+    text-align: center;
+    font-family: "Audiowide", "sans-serif";
+    color: white;
+}
+
+#cricketcontent p{
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+@media only screen and (max-width:1367px){
+    #cricketcontent p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+
+#t20image{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-image: linear-gradient(to right, black, crimson, goldenrod, crimson);
+    margin-left: 50%;
+    display: inline;
+    position: absolute;
+}
+@media only screen and (max-width:1367px){
+    #t20image{
+        width: 50%;
+    }
+}
+
+
+
+.img{
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 15px;
+    margin-left: 150px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    position: relative;
+    font-size: 40px;
+
+}
+
+
+.img h1{
+    color: white;
+    text-align: center;
+    margin-top: 140px;
+    padding: 20px;
+    font-family: "Audiowide", "sans-serif";
+}
+
+@media only screen and (max-width:1367px){
+    .img h1{
+        margin-top: 40px;
+    }
+}
+
+.img:hover{
+    z-index: 1;
+}
+
+.img:hover h1{
+    color: transparent;
+    transition: 0.5s;
+}
+
+.img1{
+    background-image: url('../images/virat.jpg');
+    width: 700px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 10px;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    .img1{
+        width: 600px;
+    }
+}
+
+.img1:hover{
+    height: 400px;
+    width: 700px;
+
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img1:hover{
+        width: 600px;
+    }
+}
+
+.img2{
+    background-image: url('../images/sachin.jpg');
+    width: 700px;
+    height: 200px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 255px;
+}
+
+@media only screen and (max-width:1367px){
+    .img2{
+        width: 600px;
+    }
+}
+
+.img2:hover{
+    height: 400px;
+    width: 700px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img2:hover{
+        width: 600px;
+    }
+}
+
+.img3{
+    background-image: url('../images/james.jpg');
+    width: 700px;
+    height: 200px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 500px;
+}
+
+@media only screen and (max-width:1367px){
+    .img3{
+        width: 600px;
+    }
+}
+
+.img3:hover{
+    height: 400px;
+    width: 700px;
+    margin-top: 300px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img3:hover{
+        width: 600px;
+    }
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+#odicontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+
+
+#odicontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#odiparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/odiwc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+@media only screen and (max-width:1367px){
+    #odiparagraph{
+        width: 900px;
+        font-size: 18px;
+
+    }
+}
+
+#odipicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 1092px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/oditrophy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media only screen and (max-width:1367px){
+    #odipicture{
+        margin-left: 990px;
+        width: 300px;
+
+    }
+}
+
+#t20content{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#t20content h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#t20paragraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 450px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/t20wc.jpg');
+}
+
+@media only screen and (max-width:1367px){
+    #t20paragraph{
+        width: 900px;
+        font-size: 18px;
+        margin-left: 390px;
+
+    }
+}
+
+#t20picture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/t20trophy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #t20picture{
+        width: 300px;
+
+    }
+}
+
+#testcontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#testcontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#testparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/testwc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #testparagraph{
+        width: 900px;
+        font-size: 18px;
+
+    }
+}
+
+
+#testpicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 1092px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/testtrophy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #testpicture{
+        margin-left: 990px;
+        width: 300px;
+
+    }
+}
+
+#creator{
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

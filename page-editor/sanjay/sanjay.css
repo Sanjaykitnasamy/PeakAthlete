@@ -1,0 +1,75 @@
+section{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, black, crimson,orange,crimson, black)
+}
+
+@media only screen and (max-width:1367px){
+    section{
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-height:714px) {
+    section{
+        height: 110vh;
+    }
+}
+
+#page{
+    display: flex;
+    flex-direction: row;
+}
+
+#pageeditor{
+    height: 725px;
+    width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: black;
+    box-shadow: 0 48px 96px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+#page h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#page h3{
+    padding: 0px;
+    margin: 2px 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#page a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    transition: 0.5s;
+}
+
+#page a:hover{
+    padding: 2px;
+    background-color: darkorange;
+    color: black;
+    border-radius: 8px;
+}
+
+#pageeditor img{
+    display: flex;
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+#pageeditor p{
+    display: inline;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

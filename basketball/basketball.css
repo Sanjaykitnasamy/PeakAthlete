@@ -1,0 +1,299 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/basketballcourt.jpg');
+}
+
+#basketball{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+
+}
+
+#basketballid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#basketballcontent{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-color: black;
+    text-align: justify;
+    color: white;
+}
+
+@media only screen and (max-width:1367px){
+    #basketballcontent{
+        width: 50%;
+    }
+}
+
+#basketballcontent h1{
+    text-align: center;
+    font-family: "Audiowide", "sans-serif";
+    color: white;
+}
+
+#basketballcontent p{
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+@media only screen and (max-width:1367px){
+    #basketballcontent p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+
+#bbimage{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-image: linear-gradient(to right, black, purple, orange, purple);
+    margin-left: 50%;
+    display: inline;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    #fbimage{
+        width: 50%;
+    }
+}
+
+.img{
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px 15px;
+    margin-left: 150px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    position: relative;
+    font-size: 40px;
+
+}
+
+.img h1{
+    color: white;
+    text-align: center;
+    margin-top: 140px;
+    padding: 20px;
+    font-family: "Audiowide", "sans-serif";
+}
+
+.img:hover{
+    z-index: 1;
+}
+
+.img:hover h1{
+    color: transparent;
+    transition: 0.5s;
+}
+
+.img1{
+    background-image: url('../images/nationalbb.jpg');
+    width: 700px;
+    height: 320px;
+    margin-left: 40px;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    .img1{
+        width: 600px;
+    }
+}
+
+.img1:hover{
+    height: 400px;
+    width: 700px;
+
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img1:hover{
+        width: 600px;
+    }
+}
+
+.img2{
+    background-image: url('../images/nba.jpg');
+    width: 700px;
+    height: 320px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 400px;
+}
+
+@media only screen and (max-width:1367px){
+    .img2{
+        width: 600px;
+    }
+}
+
+.img2:hover{
+    height: 400px;
+    width: 700px;
+    margin-top: 300px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img2:hover{
+        width: 600px;
+    }
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+#natcontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#natcontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#natparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/natbbwc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #natparagraph{
+        width: 900px;
+        font-size: 18px;
+
+    }
+}
+
+#natpicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 1092px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/natbbt.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #natpicture{
+        margin-left: 990px;
+        width: 300px;
+
+    }
+}
+
+
+#leaguecontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#leaguecontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#leagueparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 450px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/nbawc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #leagueparagraph{
+        width: 900px;
+        font-size: 18px;
+        margin-left: 390px;
+
+    }
+}
+
+#leaguepicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/nbatrophy.png');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #leaguepicture{
+        width: 300px;
+
+    }
+}
+
+
+#creator{
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

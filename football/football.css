@@ -1,0 +1,392 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/campnou.jpg');
+}
+
+#football{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+}
+
+#footballid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#footballcontent{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-color: black;
+    text-align: justify;
+    color: white;
+}
+
+@media only screen and (max-width:1367px){
+    #footballcontent{
+        width: 50%;
+    }
+}
+
+#footballcontent h1{
+    text-align: center;
+    font-family: "Audiowide", "sans-serif";
+    color: white;
+}
+
+#footballcontent p{
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+@media only screen and (max-width:1367px){
+    #footballcontent p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+#fbimage{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-image: linear-gradient(to right, black, steelblue, yellow, crimson);
+    margin-left: 50%;
+    display: inline;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    #fbimage{
+        width: 50%;
+    }
+}
+
+.img{
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px 15px;
+    margin-left: 150px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    position: relative;
+    font-size: 40px;
+
+}
+
+.img h1{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    padding: 20px;
+    font-family: "Audiowide", "sans-serif";
+}
+
+@media only screen and (max-width:1367px){
+    .img h1{
+        margin-top: 40px;
+    }
+}
+
+.img:hover{
+    z-index: 1;
+}
+
+.img:hover h1{
+    color: transparent;
+    transition: 0.5s;
+}
+
+.img1{
+    background-image: url('../images/messi.jpg');
+    width: 700px;
+    height: 200px;
+    margin-left: 40px;
+    margin-top: 25px;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    .img1{
+        width: 600px;
+    }
+}
+
+.img1:hover{
+    height: 400px;
+    width: 700px;
+
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img1:hover{
+        width: 600px;
+    }
+}
+
+.img2{
+    background-image: url('../images/cr7.jpg');
+    width: 700px;
+    height: 200px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 265px;
+}
+
+@media only screen and (max-width:1367px){
+    .img2{
+        width: 600px;
+    }
+}
+
+
+.img2:hover{
+    height: 400px;
+    width: 700px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img2:hover{
+        width: 600px;
+    }
+}
+
+.img3{
+    background-image: url('../images/mbappe.jpg');
+    width: 700px;
+    height: 200px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 500px;
+
+}
+
+@media only screen and (max-width:1367px){
+    .img3{
+        width: 600px;
+    }
+}
+
+.img3:hover{
+    height: 400px;
+    width: 700px;
+    margin-top: 300px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img3:hover{
+        width: 600px;
+    }
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+#fifacontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#fifacontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#fifaparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/fifawc.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #fifaparagraph{
+        width: 900px;
+        font-size: 18px;
+
+    }
+}
+
+#fifapicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 1092px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/fifatrophy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #fifapicture{
+        margin-left: 990px;
+        width: 300px;
+
+    }
+}
+
+#uefacontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#uefacontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#uefaparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 450px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/uefawc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #uefaparagraph{
+        width: 900px;
+        font-size: 18px;
+        margin-left: 390px;
+
+    }
+}
+
+#uefapicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/uefatrophy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #uefapicture{
+        width: 300px;
+
+    }
+}
+
+#uclcontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#uclcontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#uclparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/copawc.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #uclparagraph{
+        width: 900px;
+        font-size: 18px;
+
+    }
+}
+
+
+#uclpicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 1092px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/coptrophy.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #uclpicture{
+        margin-left: 990px;
+        width: 300px;
+
+    }
+}
+
+#creator{
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

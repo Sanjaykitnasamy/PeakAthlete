@@ -1,0 +1,29 @@
+@font-face {
+    font-family: "Ink free";
+    src: url("../../fonts/InkFree.ttf");
+}
+
+@font-face {
+    font-family: "Teen";
+    src: url("../../fonts/teen.ttf");
+}
+
+@font-face {
+    font-family: "engine";
+    src: url("../../fonts/Engine-Regular.otf");
+}
+
+@font-face {
+    font-family: "simon";
+    src: url("../../fonts/Simon-Regular.otf");
+}
+
+@font-face {
+    font-family: "comfortaa";
+    src: url("../../fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+    font-family: "hello lucky";
+    src: url("../../fonts/HelloLucky.otf");
+}

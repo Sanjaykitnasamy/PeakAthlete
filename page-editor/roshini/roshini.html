@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Peak Athlete : Roshini Basil</title>		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="roshini.css">
+		<link rel="stylesheet" type="text/css" href="fonts.css">		
+	</head>
+	<body>	
+		<div id="navigation" role="img" aria-label="header">
+			<a class="links" href="#gallery">Gallery</a>
+			<a class="links" href="#sitemap">Sitemap</a>
+			<a class="links" href="#football">Football</a>
+			<a class="home" href="../../home.html">Home</a>
+        </div>
+		
+		<div id="cover">
+			<div id="overlay">
+				<div class="text-cover" id="cover-name">Roshini Thevarajan</div>
+				<div class="text-cover" id="designation">Business Information Systems Undergraduate Student</div>
+				<img src="images/roshini.jpeg" id="roshini" alt="Roshini Thevarajan">
+			</div>
+		</div>
+
+		<!-- about information -->
+		<div id="cv-about">
+			<div class="section">
+				<h1>About</h1>
+				<p>Hi! My name is Roshini Thevarajan, business information systems undergraduate.</p>
+				<p>I am a person who works hard and is enthused, driven by myself, dependable, and responsible.
+					I am a responsible team player who can easily adjust to any difficult circumstances.	
+					I have the ability to operate well both independently and in a collaborative setting.</p>
+			</div>
+			<div class="section">
+				<h1>Basic Information</h1>
+				<p>NAME:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Roshini Thevarajan</p>
+				<p>EMAIL:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;roshini.20221482@iit.ac.lk</p>
+				<p>ROLE:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Student Four</p>
+				<p>IIT ID:&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;20221482</p>
+				<p>UOW ID:&ensp;&ensp;&ensp;&ensp;&ensp;w1955594</p>
+			</div>
+		</div>
+
+		<div id="page-editor">
+			<!-- information about the gallery page -->
+			<div class="web-page" id="gallery">
+				<div  class="column col">
+					<h1>Gallery</h1>
+				</div>
+				<div  class="column">
+					<ul>
+						<li>Created using html, css and javascript.</li>
+						<li>Used javaacript to change font size and colour on button click.</li>
+						<li>Added an extra functionality to reset the font size and colour to its default settings.</li>
+						<li>The page two sections to showcase the past and upcoming sporting events hosted in the UK.</li>
+						<li>Click <a href="../../gallery/gallery.html">here</a>.</li>
+					</ul>
+				</div>
+			</div>			
+			
+			<!-- information about the sitemap page -->
+			<div class="web-page" id="sitemap">>
+				<div  class="column col">
+					<h1>Sitemap</h1>
+				</div>
+				<div  class="column">
+					<ul>
+						<li>Created using html, css and svg.</li>
+						<li>The icons that depict the pages of this website were created using svg.</li>
+						<li>The svg icons are hyperlinked to the relavant pages of the website.</li>
+						<li>This page contains tree-style sitemap as opposed to the morst commonly used list-style sitemap.</li>
+						<li>Click <a href="../../sitemap/sitemap.html">here</a>.</li>
+					</ul>
+				</div>
+			</div>			
+
+			<!-- information about the footbal (additonal content) page -->
+			<div class="web-page" id="football">>
+				<div  class="column col">
+					<h1>Football</h1>
+				</div>
+				<div  class="column">
+					<ul>
+						<li>Created using html and css.</li>
+						<li>This is additional content webpage that designed in line with the our theme - sports in UK.</li>
+						<li>Anchors have been used to easily navigate to different sections of the page.</li>
+						<li>Added images and hover effects to increase the user interaction.</li>
+						<li>Click <a href="../../football/football.html">here</a>.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- contact info -->
+		<div id="contact-div">
+			<div id="contact-img">
+				<div class="row">
+					<h2>Address</h2>
+					<p>64/1 Fransawatta Lane,</p>
+					<p>Colombo 01500,</p>
+					<p>Sri Lanka.</p>
+				</div>
+				<div class="row">
+					<h2>Mobile</h2>
+					<p>+94 778 641491</p>
+				</div>
+				<div class="row">
+					<h2>Email</h2>
+					<a href="mailto:roshini.20221482@iit.ac.lk.com">roshini.20221482@iit.ac.lk</a>
+				</div>
+			</div>
+			
+			<form name="contact-form" id="form" method="post">
+				<h2>Send Me A Message</h2>
+				<input type="text" id="name" name="name" placeholder="Name" >
+				<input type="text" id="subject" name="subject" placeholder="Subject">
+				<input type="text" id="email" name="email" placeholder="E-mail">
+				<textarea id="message" name="message" placeholder="Your Message" style="height:105px" ></textarea>
+				<input type="submit" value="Send" onclick="return validation();" >
+			</form>
+		</div>
+		
+		<script>
+			window.onscroll = function() {stickyNavigation()};
+
+			function stickyNavigation() {
+			  if (document.body.scrollTop > 570 || document.documentElement.scrollTop > 570) {
+				document.getElementById("navigation").style.transition = "background-color 0.3s ease-in";
+				document.getElementById("navigation").style.backgroundImage = "linear-gradient(to bottom right, #549B9E, #113F59)";
+			  } else {
+				document.getElementById("navigation").style.backgroundColor = "transparent";
+				document.getElementById("navigation").style.transition = "background-color 0.3s ease-out";
+			  }
+			}
+			
+			function validation() {
+			  var name = document.forms["contact-form"]["name"].value;
+			  var msg = document.forms["contact-form"]["message"].value;
+			  var email = document.forms["contact-form"]["email"].value;
+			  if (name == "") {
+				alert("Name must be filled out");
+				return false;
+			  }
+			  
+			  else if (msg == "") {
+				alert("E-mail must be filled out");
+				return false;
+			  }
+			  
+			  else if (email == "") {
+				alert("Message must be filled out");
+				return false;
+			  }
+			  else  {
+				alert("Message succesfully submitted!");
+				return false;
+			  }
+			  return true;
+			}
+		</script>
+	</body>
+</html>

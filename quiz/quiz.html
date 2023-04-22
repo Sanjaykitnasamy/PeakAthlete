@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Linking style sheet-->
+    <link rel="stylesheet" href="quiz.css">
+	<link rel="stylesheet" href="../external.css">
+
+    <title>Peak Athlete: Quiz</title>
+</head>
+<body>
+    <header>    
+        <div id="navigation">
+            <p>PEAK<br>ATHLETE</p>
+            <div id="colour"></div>
+                <nav>
+                <a href="../home.html">Home</a>
+                <a href="../comments/comment.html">Comments</a>
+                <a href="../shop/shop.html">Shop</a>
+                <a id="current" href="Quiz_Start.html">Quiz</a>
+                <a href="../sitemap/sitemap.html">SiteMap</a>
+                <a href="../gallery/gallery.html">Gallery</a>
+                <a href="../student-details/student_details.html">About</a>
+                </nav>
+        </div>
+        <div class="quiz">
+            <div class="quizHeader">
+                <h2 class="mainTitle">Quick Quiz</h2>
+                <div class="timer">
+                    <div class="timerDesc">
+                        Time Left
+                    </div>
+                    <div id="timer">
+                    </div>
+                </div>
+            </div>
+            <div id="Container1">
+                <form name="form" class="form">
+                    <br><br><br>
+                    <div class='question1' id="quesOne">
+                        <p class="question">1. In basketball, what is it called when the referee puts the ball into play by tossing it up between two opponents who try to tap it to a teammate?</p>
+          
+                        <ul class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="2" id="Jump ball">
+                                <label for="Jump ball" id="correctString1">Jump ball</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="-1" id="Turnover">
+                                <label for="Turnover">Turnover</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="-1" id="Scrum">
+                                <label for="Scrum">Scrum</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q1" value="-1" id="Dribble">
+                                <label for="Dribble">Dribble</label>
+                            </div>
+                        </ul>
+                    </div>
+                
+                    <div class='question2'>
+                        <p class="question">2. Who invented basketball?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="-1" id="Maurice Podoloff">
+                                <label for="Maurice Podoloff">Maurice Podoloff</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="2" id="James Naismith">
+                                <label id="correctString2" for="James Naismith">James Naismith</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="-1" id="George Mikan">
+                                <label for="George Mikan">George Mikan</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q2" value="-1" id="Bill Sharman">
+                                <label for="Bill Sharman">Bill Sharman</label>
+                            </div>
+                        </ul>
+                    </div>
+              
+                    <div class='question3'>
+                        <p class="question">3. When was the Durham County Cricket Club founded?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="2" id="1882">
+                                <label id="correctString3" for="1882">1882</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="-1" id="1978">
+                                <label  for="1978">1978</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="-1" id="1885">
+                                <label for="1885">1885</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q3" value="-1" id="1883">
+                                <label for="1883">1883</label>
+                            </div>
+                        </ul>
+                    </div>
+             
+                    <div class='question4'>
+                        <p class="question">4. In cricket, How many minutes before play should the umpires take the field?</p>
+          
+                        <ul class="option">
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="-1" id="Three">
+                                <label for="Three">Three</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="-1" id="Six">
+                                <label for="Six">Six</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="2" id="Five">
+                                <label id="correctString4" for="Five">Five</label>
+                            </div>
+                            <div class="answers">
+                                <input class="answer" type="radio" name="q4" value="-1" id="Two">
+                                <label for="Two">Two</label>
+                            </div>
+                        </ul>
+                    </div>
+             
+                    <div class='question5'>
+                        <p class="question">5. In Cricket, Which country has played the maximum number of one day matches?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="2" id="Australia">
+                                <label id="correctString5" for="Australia">Australia</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="-1" id="India">
+                                <label  for="India">India</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="-1" id="Sri Lanka">
+                                <label for="Sri Lanka">Sri Lanka</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q5" value="-1" id="America">
+                                <label for="America">America</label>
+                            </div>
+                        </ul>
+                    </div>
+                 
+                    <div class='question6'>
+                        <p class="question">6. When a boxer falls to the floor, how many seconds do they have to get up again?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="-1" id="15 seconds">
+                                <label for="15 seconds">15 seconds</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="-1" id="12 seconds">
+                                <label for="12 seconds">12 seconds</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="-1" id="8 seconds">
+                                <label for="8 seconds">8 seconds</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q6" value="2" id="10 seconds">
+                                <label id="correctString6" for="10 seconds">10 seconds</label>
+                            </div>
+                        </ul>
+                    </div>
+                 
+                    <div class='question7'>
+                        <p class="question">7. How many rounds are there in a professional boxing match?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="2" id="12">
+                                <label id="correctString7" for="12">12</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="-1" id="15">
+                                <label for="15">15</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="-1" id="10">
+                                <label for="10">10</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q7" value="-1" id="16">
+                                <label for="16">16</label>
+                            </div>
+                        </ul>
+                    </div>
+              
+                    <div class='question8'>
+                        <p class="question">8. Boxing, what year did the Thrilla in Manila fight take place?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="-1" id="1988">
+                                <label for="1988">1988</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="2" id="1975">
+                                <label id="correctString8" for="1975">1975</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="-1" id="1979">
+                                <label for="1979">1979</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q8" value="-1" id="1974">
+                                <label for="1974">1974</label>
+                            </div>
+                        </ul>
+                    </div>
+            
+                    <div class='question9'>
+                        <p class="question">9. In football, How many teams originally competed in the Premier League?</p>
+    
+                        <ul class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="-1" id="20">
+                                <label for="20">20</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="2" id="22">
+                                <label id="correctString9" for="22">22</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="-1" id="15">
+                                <label for="15">15</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q9" value="-1" id="28">
+                                <label for="2">28</label>
+                            </div>
+                      </ul>
+                    </div>
+            
+                    <div class='question10'>
+                        <p class="question">10. In football, The Scudetto is the name given to the league title in which European country?</p>
+                        <ul class="option">
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="-1" id="China">
+                                <label for="China">China</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="-1" id="UK">
+                                <label for="UK">UK</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="-1" id="USA">
+                                <label for="USA">USA</label>
+                            </div>
+                            <div class="answers">
+                                <input type="radio" class="answer" name="q10" value="2" id="Italy">
+                                <label id="correctString10" for="Italy">Italy</label>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="submitter"><!--this.disable will make the form submit only once-->
+                        <input class="button" id="submitButton" onClick="submitQuiz();this.disabled = true;" type="button" value="Submit">
+                    </div>
+                    <br>
+                    <a class="backTop" href="#quesOne">Back to the top</a>
+                </form>
+             
+            </div>
+        </div>
+        
+        <div class="quizResult">
+            <!--show result-->
+            <div id="showAnswer" style="display: none;">
+                <div class="resultTitle">
+                    <h3 id="resultText">You've completed the quiz!</h3>
+                    <br><p>Your results</p>
+                </div>
+    
+                
+            
+                <!--show score -->
+                <div class="quizScore">
+                    <h2 id="userScore"></h2>
+                </div>
+                <div class="quizAnswers" id="correctAnswer1"></div>
+                <div class="quizAnswers" id="correctAnswer2"></div>
+                <div class="quizAnswers" id="correctAnswer3"></div>
+                <div class="quizAnswers" id="correctAnswer4"></div>
+                <div class="quizAnswers" id="correctAnswer5"></div>
+                <div class="quizAnswers" id="correctAnswer6"></div>
+                <div class="quizAnswers" id="correctAnswer7"></div>
+                <div class="quizAnswers" id="correctAnswer8"></div>
+                <div class="quizAnswers" id="correctAnswer9"></div>
+                <div class="quizAnswers" id="correctAnswer10"></div>
+          
+                <input type="button" value="Play Again" onclick="location.reload();" class="button" id="resetButton">
+                <!--refresh the page-->
+    
+                <!--show quiz button-->
+                <input type="button" value="Show Answers" class="button" id="show">
+          
+                
+        </div>
+    
+        </div>
+        <script src="quiz.js"></script>
+    </header>
+    <section>
+        
+    </section>
+    <footer>
+        <a id="logo" href="#navigation">
+            PEAK<br>ATHLETE
+            </a>
+        <div id="hl"></div>
+           <div id="footerlinks">
+                <a href="../comments/comment.html">Comments</a>
+                <a href="#">Shop</a>
+                <a href="../quiz/quiz_start.html">Quiz</a>
+                <a href="../sitemap/sitemap.html">SiteMap</a>
+                <a href="../student-details/student_details.html">About us</a>
+            </div>
+            <div id="homelinks">
+                <h3>HOME</h3>
+                <a href="../cricket/cricket.html">Cricket</a>
+                <a href="../football/football.html">Football</a>
+                <a href="../basketball/basketball.html">Basketball</a>
+                <a href="../boxing/boxing.html">Boxing</a>
+                <a href="../home.html#legends">Legends</a>
+            </div>
+            <div id="cricketlinks">
+                <h3>CRICKET</h3>
+                <a href="../cricket/cricket.html#cricket">Introduction</a>
+                <a href="../cricket/cricket.html#odicontent">ODI</a>
+                <a href="../cricket/cricket.html#t20content">T20</a>
+                <a href="../cricket/cricket.html#testcontent">TEST</a>
+            </div>
+            <div id="footballlinks">
+                <h3>FOOTBALL</h3>
+                <a href="../football/football.html#football">Introduction</a>
+                <a href="../football/football.html#fifacontent">FIFA</a>
+                <a href="../football/football.html#uefacontent">UEFA</a>
+                <a href="../football/football.html#uclcontent">Copa America</a>
+            </div>
+            <div id="basketballlinks">
+                <h3>BASKETBALL</h3>
+                <a href="../basketball/basketball.html#basketball">Introduction</a>
+                <a href="../basketball/basketball.html#natcontent">National</a>
+                <a href="../basketball/basketball.html#leaguecontent">League</a>
+            </div>
+            <div id="boxinglinks">
+                <h3>BOXING</h3>
+                <a href="../student2/boxing/boxing.html#boxing">Introduction</a>
+                <a href="../student2/boxing/boxing.html#natcontent">National</a>
+                <a href="../student2/boxing/boxing.html#spocontent">Sponsored</a>
+            </div>
+            <div id="social">
+                <h3>SOCIAL</h3>
+                <a href="https://instagram.com">Instagram</a>
+                <a href="https://facebook.com">Facebook</a>
+                <a href="https://twitter.com">Twitter</a>
+            </div>
+        <p id="end">© 2023 BIS Group B1, All Rights Reserved</p>
+    </footer>
+	
+</body>
+</html>

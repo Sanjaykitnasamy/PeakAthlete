@@ -1,0 +1,113 @@
+@media only screen and (max-height:714px) {
+    header{
+        height: 110vh;
+    }
+}
+
+form{
+    height: 615px;
+    width: 600px;
+    margin-left: 450px;
+    margin-top: 10px;
+    text-align: center;
+    background: transparent;
+    position:absolute;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #000000b3;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: 0.5s
+}
+
+@media only screen and (max-width:1367px){
+    form{
+        height: 515px;
+        width: 500px;
+    }
+}
+
+form:hover{
+    background-image: linear-gradient(to right, white, snow, white); 
+    border-radius: 40px;
+    color: black;
+    transition: 0.5s;
+}
+
+input, textarea{
+    border:none;
+    border-radius: 10px;
+    outline:none;
+    font-size:18px;
+    margin-top:6px;
+    padding: 10px;
+}
+
+@media only screen and (max-width:1367px){
+    input{
+        padding: 5px;
+    }
+}
+
+textarea{
+    border: solid black;
+}
+
+@media only screen and (max-width:1367px){
+    textarea{
+        padding: 0;
+    }
+}
+
+
+form:hover input{
+    background-color: black;
+}
+
+.btn{
+    display: block;
+    background:crimson; 
+    padding:14px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}      
+
+@media only screen and (max-width:1367px){
+    .btn{
+        padding: 5px;  
+    }
+}
+
+@media only screen and (max-width:1367px){
+    .btn1{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width:1367px){
+    .btn2{
+        width: 150px;
+        margin-top: -30px;
+        margin-left: 280px;
+    }
+}
+
+#creator{
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+

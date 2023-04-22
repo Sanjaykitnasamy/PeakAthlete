@@ -1,0 +1,248 @@
+#navigation{
+	overflow: hidden;
+	font-family: "Ink free", Centaur;
+	font-weight: bold;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 300;
+	padding-right: 50px;
+}
+
+.links {
+	float: right;
+	display: block;
+	color: #f2f2f2;
+	padding: 20px 15px 20px 15px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.home {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	padding: 20px 15px 20px 15px;
+	margin-left: 35px;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#navigation a:hover {
+	background-color: #549B9E;
+	color: #000000;
+	border-radius: 2em;
+	/* padding: 5px 5px 5px 5px; */
+}
+
+body {
+	margin: 0;
+}
+
+/* top cover image and text */
+#cover {
+	position: relative;
+	text-align: center;
+	color: white;
+	height: 560px;
+	width: 100%;
+	top: -20px;
+	background: url(images/background.jpg);
+	background-size: cover;
+	color: transparent; 
+	overflow: hidden;
+}
+
+/* color overlay for the cover image */
+#overlay {
+	background-color: rgba(17, 63, 89, 0.3);
+	width: 100%;
+	height: 100%;
+}
+
+/* position of the text over the cover image */
+.text-cover {
+	position: absolute;
+	color: #FFFFFF;
+	font-family: Segoe Print;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+#cover-name {
+	top: 390px;
+}
+
+#designation {
+	top: 450px;
+}
+
+/* styling for my photo over the cover image */
+#roshini {
+	top: 170px;
+	left: 50%;
+	margin-left: -90px;
+	height: 32%;
+	width: 12%;
+	z-index: 2;
+	position: absolute;
+	border-radius: 50%;
+	filter: grayscale(23%);
+}
+ 
+#cv-about {
+	width: 85%;
+	height: 300px;
+	margin: 50px 100px 50px 100px;
+	box-shadow: 0 0 5px 5px #a6a6a6;
+}
+
+.section {
+	float: left;
+	width: 50%;
+	padding: 10px 20px 10px 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2 {
+	font-family: Verdana;
+}
+
+p, li {
+	font-family: Verdana;
+}
+
+.column {
+	float: left;
+	width: 75%;
+	padding: 10px 20px 10px 20px;
+}
+
+#gallery {
+	margin-top: 70px;
+}
+
+.web-page {
+	width: 85%;
+	height: 250px;
+	margin: 50px 100px 50px 100px;
+	box-shadow: 0 0 5px 5px #a6a6a6;
+}
+
+.col {
+	width: 23%;
+	height: 100%;
+	display: table;
+	color: #FFFFFF;
+	background-image: linear-gradient(to bottom right, #549B9E, #113F59);
+}
+
+.col h1 {
+	text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+li {
+	font-size: 18px;
+	line-height:200%;
+}
+
+a {
+	text-decoration: none;
+	color: #113F59;
+	font-weight: bold;
+}
+
+/* remove default bullet list styling */
+ul {
+	list-style: none;
+}
+
+/* custom bullet list styling */
+ul li::before {
+	content: "\2022";  
+	color: #113F59; 
+	font-weight: bold; 
+	display: inline-block;
+	width: 1em; 
+	margin-left: -2em;
+}
+
+#contact-div {
+	width: 85%;
+	height: 500px;
+	margin: 70px 100px 50px 100px;
+	box-shadow: 0 0 5px 5px #a6a6a6;
+	color: #FFFFFF;
+}
+
+#contact-img {
+	width: 38%;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	padding: 80px 15px 0px 130px;
+	filter: grayscale(65%);
+	float: left;
+	background-image: url('images/contact.jpg');
+}
+
+#form {
+	width: 62%;
+	height: 500px;
+	color: #000;
+	text-align: Center;
+	float: right;
+	padding: 15px 120px 15px 120px;
+}
+
+input[type=text], select, textarea {
+	width: 100%;
+	padding: 12px;
+	border: 3px solid #113F59;
+	border-radius: 10px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+	font-family: "Teen";
+}
+
+input[type=submit] {
+	background-color: #113F59;
+	color: #FFFFFF;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: "Teen";
+	font-weight: bold;
+}
+
+input[type=submit]:hover {
+	background-color: #549B9E;
+	color: #000;
+	font-family: "Teen";
+	font-weight: bold;
+}
+
+#contact-img a {
+	color: #FFFFFF;
+	font-family: Verdana;
+	text-decoration: none;
+}
+
+#contact-img a:hover {
+	color: #5cd6d6;
+	text-decoration: none;
+}

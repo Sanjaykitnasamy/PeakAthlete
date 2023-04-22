@@ -1,0 +1,210 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('images/background.jpg');
+}
+
+.mainHeading {
+	font-family: Verdana;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: lawngreen;
+}
+
+.subHeading {
+	font-family: Verdana;
+	font-size: px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 110px;
+	text-align: left;
+	color: rgb(252, 252, 253);
+}
+
+/* grid positioning for both gallery sections */
+.gallery1,
+.gallery2 {
+	display: grid;
+	grid-template-columns: 7.5% 68% 2% 15% 7.5%;
+	grid-template-rows: 595px;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.galleryContainer {
+	display: grid;
+	grid-column: 2/3;
+	grid-row: 1/3;
+	background-image: linear-gradient(to bottom right, #01C32C, #18452E);
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: 420px 155px;
+}
+
+.image {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	z-index: 2;
+	margin: 35px 45px 0 45px;
+}
+
+.imageContent {
+	height: 400px;
+	width: 100%;
+}
+
+.text {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	z-index: 2;
+	margin: 0 25px 25px 25px;
+	font-weight: bold;
+}
+
+.text h3 {
+	font-family: Verdana;
+	font-size: 23px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.text p {
+	margin: 0;
+	text-align: justify;
+}
+
+.tool-tip {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 0 15px 30px;
+	border-color: transparent transparent transparent #18452E;
+	position: relative;
+	display: grid;
+	grid-column: 3/4;
+	grid-row: 1/3;
+	margin-top: 48px;
+}
+
+/* styling for the tdiv holding the gallery thumbnails */
+.mainSlider {
+	background-color: #18452E;
+	box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.3);
+	padding: 17px;
+	float: right;
+	grid-column: 4/5;
+	grid-row: 1/3;
+}
+
+.innerSlider {
+	background-color: #a6a6a6;
+	width: auto;
+	height: 100%;
+	padding: 9px 4px 0 4px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.innerSlider img {
+	width: 100%;
+	height: 85px;
+}
+
+.innerSlider p {
+	display: none;
+} 
+
+#creator{
+    color: white;
+    margin-left: 50px;
+	margin-top: 50px;
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* styling for font settings menu */
+.font-menu {
+	position: relative;
+	top: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: inline-block;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	animation: slide-in 1s ease-out;
+}
+
+ul {
+	position: relative;
+	display: flex;
+	flex: 1 1 auto;
+	margin: 0;
+	padding: 0 20px;
+	list-style-type: none;
+}
+
+ul li {
+	border: 2px solid transparent;
+	border-radius: 5px;
+	padding: 10px;
+	transition: background 0.2s;
+}
+
+ul li a {
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: color 0.2s;
+}
+
+ul li ul {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	display: block;
+	margin: 12px -12px;
+	padding: 0;
+	background: #999999;
+	border: 2px solid #333333;
+	border-radius: 5px;
+	transition: opacity 0.2s, visibility 0.2s;
+}
+
+ul li ul li {
+	margin: -2px 0 0 -2px;
+	width: calc(100% - 20px);
+	line-height: 1.7;
+}
+
+ul li ul li a {
+	color: #fff;
+}
+
+/* chnage button colour on hover */
+ul li:hover {
+	background: lawngreen;
+	border: 2px solid #18452E;
+}
+
+ul li:hover a {
+	color: #000;
+}
+
+ul li:hover ul {
+	visibility: visible;
+	opacity: 1;
+}
+
+ul li:hover ul li a {
+	color: #000;
+}

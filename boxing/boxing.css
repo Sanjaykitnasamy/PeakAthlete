@@ -1,0 +1,297 @@
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../images/boxingring.jpg');
+}
+
+#boxing{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 100px;
+
+}
+
+#boxingid{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#boxingcontent{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-color: black;
+    text-align: justify;
+    color: white;
+}
+
+@media only screen and (max-width:1367px){
+    #boxingcontent{
+        width: 50%;
+    }
+}
+
+#boxingcontent h1{
+    text-align: center;
+    font-family: "Audiowide", "sans-serif";
+    color: white;
+}
+
+#boxingcontent p{
+    padding: 30px;
+    font-size: 20px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+@media only screen and (max-width:1367px){
+    #boxingcontent p{
+        font-size: 18px;
+        text-align: justify;
+    }
+}
+
+
+#bimage{
+    width: 50%;
+    height: 745px;
+    position: absolute;
+    background-image: linear-gradient(to right, black, red, coral, coral, red);
+    margin-left: 50%;
+    display: inline;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    #bimage{
+        width: 50%;
+    }
+}
+
+.img{
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px 15px;
+    margin-left: 150px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    position: relative;
+    font-size: 40px;
+
+}
+
+.img h1{
+    color: white;
+    text-align: center;
+    margin-top: 140px;
+    padding: 20px;
+    font-family: "Audiowide", "sans-serif";
+}
+
+.img:hover{
+    z-index: 1;
+}
+
+.img:hover h1{
+    color: transparent;
+    transition: 0.5s;
+}
+
+.img1{
+    background-image: url('../images/natboxing.jpg');
+    width: 700px;
+    height: 320px;
+    margin-left: 40px;
+    position: absolute;
+}
+
+@media only screen and (max-width:1367px){
+    .img1{
+        width: 600px;
+    }
+}
+
+.img1:hover{
+    height: 400px;
+    width: 700px;
+
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img1:hover{
+        width: 600px;
+    }
+}
+
+.img2{
+    background-image: url('../images/spoboxing.jpeg');
+    width: 700px;
+    height: 320px;
+    margin-left: 40px;
+    position: absolute;
+    margin-top: 400px;
+}
+
+@media only screen and (max-width:1367px){
+    .img2{
+        width: 600px;
+    }
+}
+
+.img2:hover{
+    height: 400px;
+    width: 700px;
+    margin-top: 300px;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width:1367px){
+    .img2:hover{
+        width: 600px;
+    }
+}
+
+.page{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+#natcontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#natcontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#natparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/olympicb.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #natparagraph{
+        width: 900px;
+        font-size: 18px;
+
+    }
+}
+
+#natpicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 1092px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/anthonyj.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #natpicture{
+        margin-left: 990px;
+        width: 300px;
+
+    }
+}
+
+#spocontent{
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: black;
+    position: absolute;
+}
+
+#spocontent h1{
+    font-size: 50px;
+    font-family: "Audiowide","sans-serif";
+    padding: 10px;
+    text-shadow: 3px 3px 3px blue;
+    margin-left: 50px;
+    
+}
+
+#spoparagraph{
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 450px;
+    margin-top: -35px;
+    position: absolute;
+    width: 1000px;
+    height: 540px;
+    padding: 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../images/spob.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+@media only screen and (max-width:1367px){
+    #spoparagraph{
+        width: 900px;
+        font-size: 18px;
+        margin-left: 390px;
+
+    }
+}
+
+#spopicture{
+    height: 540px;
+    width: 350px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: -35px;
+    position: absolute;
+    background-image: url('../images/mike.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width:1367px){
+    #spopicture{
+        width: 300px;
+
+    }
+}
+
+#creator{
+    color: white;
+    margin-left: 50px;
+    margin-top: 50px;
+
+}
+
+#creator a{
+    text-decoration: none;
+    color: white;
+}
+
+#creator h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
